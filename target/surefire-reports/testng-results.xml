@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-15T16:57:11 EET" name="Surefire suite" finished-at="2023-12-15T16:57:17 EET" duration-ms="6205">
+    <groups>
+    </groups>
+    <test started-at="2023-12-15T16:57:11 EET" name="Surefire test" finished-at="2023-12-15T16:57:17 EET" duration-ms="6205">
+      <class name="framework.BaseTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:framework.BaseTest@4b44655e]" started-at="2023-12-15T16:57:11 EET" name="setup" finished-at="2023-12-15T16:57:16 EET" duration-ms="4948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.BaseTest@4b44655e]" started-at="2023-12-15T16:57:16 EET" name="tearDown" finished-at="2023-12-15T16:57:17 EET" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- framework.BaseTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
