@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regressionTest.ProductsTestcases">
+      <class name="regressionTest.cartTestcases">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifyTheCartCount"/>
           <include name="name"/>
+          <include name="setup"/>
+          <include name="removeIteamFromcart"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- regressionTest.ProductsTestcases -->
+      </class> <!-- regressionTest.cartTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

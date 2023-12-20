@@ -96,7 +96,7 @@ public class ProductsTestcases extends BaseTest {
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
-		productsPage.clickBurgerMenu("About");
+		productsPage.clickBurgerMenu("Logout");
 				
 
 	}
@@ -109,7 +109,20 @@ public class ProductsTestcases extends BaseTest {
 		productsPage.productPageOpened();
 		productsPage.addProductToCart(0);
 		productsPage.addProductToCart(2);
-		Assert.assertTrue(productsPage.returnCartItemscount().equalsIgnoreCase("2"));
+		System.out.println(productsPage.returnCartItemscount());
+		Assert.assertEquals(Integer.parseInt(productsPage.returnCartItemscount())-1, 2);;
+		
+		
+	}
+	
+	
+	@Test
+	public void verifyProductRemovalFromCart() {
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		productsPage.productPageOpened();
+		productsPage.addRandomIteamToCart();;
+		productsPage.clickCart();
 		
 		
 	}

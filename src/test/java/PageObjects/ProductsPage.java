@@ -79,10 +79,15 @@ public class ProductsPage extends Pagebase {
 	}
 
 	public String returnCartItemscount() {
-		
-		
 		// TODO Auto-generated method stub
 		return getMessage(cartIcon);
+	}
+	
+	
+	public void clickCart() {
+		clickButton(cartIcon);
+		
+		
 	}
 
 }
