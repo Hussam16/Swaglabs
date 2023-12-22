@@ -10,6 +10,7 @@ public class CartPage extends Pagebase {
 
 	private By removeLink = By.cssSelector("button[class='btn_secondary cart_button']");
 	private By cartPageTitle = By.cssSelector("div[class='subheader']");
+	private By contShoppingButtoun=By.cssSelector("a[class='btn_secondary']");
 
 	public CartPage(WebDriver driver) {
 		super(driver);
@@ -25,11 +26,19 @@ public class CartPage extends Pagebase {
 	public int removeProduct() {
 
 		WebElement removeLinksIsVisable = waitForElement(removeLink);
-		System.out.println("xxxxxxxxxxxxxxxxxx"+returnSizeofElementList(removeLink));
 		removeLinksIsVisable.click();
-		return returnSizeofElementList(removeLink);
-		
-
+		return returnSizeofElementList(removeLink);		
 
 	}
+	
+	public void clickContinueShoppingButton() {
+		
+		clickButton(contShoppingButtoun);
+		
+	}
+	
+	
+	
+	
+	
 }

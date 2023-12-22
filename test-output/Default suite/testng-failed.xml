@@ -5,9 +5,8 @@
     <classes>
       <class name="regressionTest.cartTestcases">
         <methods>
-          <include name="name"/>
           <include name="setup"/>
-          <include name="removeIteamFromcart"/>
+          <include name="verifyContinueShoppingButton"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- regressionTest.cartTestcases -->

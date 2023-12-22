@@ -20,26 +20,27 @@ public class ProductsTestcases extends BaseTest {
 	private LoginPages loginPages;
 	private ProductsPage productsPage;
 
-	@BeforeMethod
-	public void name() {
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
 
-	}
 
 	@Test
 	public void addProductTocart() {
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		Assert.assertEquals(productsPage.productPageOpened(), "Products");
 		Assert.assertEquals("REMOVE", productsPage.addProductToCart(0));
+		productsPage.clickBurgerMenu("Logout");
 
 	}
 
 	// from low to High
 	@Test
 	public void verifySortOfProducts() {
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
@@ -51,10 +52,13 @@ public class ProductsTestcases extends BaseTest {
 		boolean lowHigh = Double.parseDouble(prices.get(0).getText().replace("$", "")) < Double
 				.parseDouble(prices.get(prices.size() - 1).getText().replace("$", "")) ? true : false;
 		Assert.assertTrue(lowHigh);
+		productsPage.clickBurgerMenu("Logout");
 
 	}
 
 	public void verifySortOfProductsFromZtoA() {
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
@@ -67,11 +71,14 @@ public class ProductsTestcases extends BaseTest {
 		boolean lowHigh = Double.parseDouble(prices.get(0).getText().replace("$", "")) < Double
 				.parseDouble(prices.get(prices.size() - 1).getText().replace("$", "")) ? true : false;
 		Assert.assertTrue(lowHigh);
+		productsPage.clickBurgerMenu("Logout");
 
 	}
 
 	@Test
 	public void verifySortFromZtoA() {
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
@@ -88,11 +95,14 @@ public class ProductsTestcases extends BaseTest {
 
 		boolean isEqualIgnoreCase = item1.equalsIgnoreCase(item2);
 		Assert.assertTrue(isEqualIgnoreCase);
+		productsPage.clickBurgerMenu("Logout");
 
 	}
 
 	@Test
 	public void verifyMenuContents() throws InterruptedException {
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
@@ -103,14 +113,15 @@ public class ProductsTestcases extends BaseTest {
 	
 	@Test
 	public void verifyTheCartCount()  {
-		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
 		productsPage.addProductToCart(0);
-		productsPage.addProductToCart(2);
 		System.out.println(productsPage.returnCartItemscount());
 		Assert.assertEquals(Integer.parseInt(productsPage.returnCartItemscount())-1, 2);;
+		productsPage.clickBurgerMenu("Logout");
 		
 		
 	}
@@ -118,11 +129,14 @@ public class ProductsTestcases extends BaseTest {
 	
 	@Test
 	public void verifyProductRemovalFromCart() {
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		productsPage.productPageOpened();
 		productsPage.addRandomIteamToCart();;
 		productsPage.clickCart();
+		productsPage.clickBurgerMenu("Logout");
 		
 		
 	}

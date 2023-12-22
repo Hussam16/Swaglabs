@@ -15,25 +15,22 @@ public class LoginTestcases extends BaseTest {
 	private ProductsPage productsPage; 
 
 
-	@BeforeMethod
-	public void name() {
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		
-	}
-
 	@Test
 	public void sucessfulLogin() {
 
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		Assert.assertEquals(productsPage.productPageOpened(), "Products");
+		productsPage.clickBurgerMenu("Logout");
 
 	}
 
 	@Test
 	public void verifyErrorLoginMessage() {
-		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		Assert.assertEquals(loginPages.signUsernameOnly("standard_user"), "Epic sadface: Password is required");
 		loginPages.refreshLoginPage();
@@ -46,7 +43,9 @@ public class LoginTestcases extends BaseTest {
 	
 	@Test
 	public void lockedLogin() {
-
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
 		loginPages.navigateSwagLabs();
 		Assert.assertEquals(loginPages.lockedUser("locked_out_user", "secret_sauce"), "Epic sadface: Sorry, this user has been locked out.");
 		

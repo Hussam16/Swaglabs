@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	protected WebDriver driver;
+	protected  WebDriver driver;
 
 	@BeforeTest
 	public void setup() {
@@ -27,7 +27,7 @@ public class BaseTest {
 
 		if (!(driver == null)) {
 			driver.quit();
-			driver = null;
+			
 
 		}
 	}

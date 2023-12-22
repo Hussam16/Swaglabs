@@ -45,7 +45,7 @@ public class Pagebase {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
-	
+
 	protected List<WebElement> waitForElementsVisabilty(By locator) {
 
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -84,14 +84,11 @@ public class Pagebase {
 		WebElement element = waitForElementVisabilty(locator);
 		return select = new Select(element);
 	}
-	
+
 	protected int returnSizeofElementList(By loctor) {
-		
-	 return	driver.findElements(loctor).size();
-		
-		
+
+		return driver.findElements(loctor).size();
+
 	}
-	
-	
 
 }

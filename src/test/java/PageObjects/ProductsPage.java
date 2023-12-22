@@ -18,7 +18,7 @@ public class ProductsPage extends Pagebase {
 	private By dropDownSort = By.cssSelector("select[class='product_sort_container']");
 	private By burgerMenu = By.cssSelector("div[class='bm-burger-button']");
 	private By menuList = By.cssSelector("a[class='bm-item menu-item']");
-	private By cartIcon= By.cssSelector("span[class='fa-layers-counter shopping_cart_badge']");
+	private By cartIcon = By.cssSelector("span[class='fa-layers-counter shopping_cart_badge']");
 
 	public ProductsPage(WebDriver driver) {
 		super(driver);
@@ -82,12 +82,10 @@ public class ProductsPage extends Pagebase {
 		// TODO Auto-generated method stub
 		return getMessage(cartIcon);
 	}
-	
-	
+
 	public void clickCart() {
 		clickButton(cartIcon);
-		
-		
+
 	}
 
 }
