@@ -4,21 +4,21 @@
 
 	<test name="LoginTest">
 		<classes>
-			<class name="regressionTest.LoginTestcases" />
+			<class name="TestPackage.LoginTestcases" />
 		</classes>
 	</test>
 
 
 	<test name="ProductsTest">
 		<classes>
-			<class name="regressionTest.ProductsTestcases" />
+			<class name="TestPackage.ProductsTestcases" />
 		</classes>
 	</test>
 
 
 	<test name="CartTest">
 		<classes>
-			<class name="regressionTest.cartTestcases" />
+			<class name="TestPackage.cartTestcases" />
 		</classes>
 	</test>
 </suite>

@@ -1,4 +1,4 @@
-package regressionTest;
+package TestPackage;
 
 import java.time.Duration;
 import java.util.List;

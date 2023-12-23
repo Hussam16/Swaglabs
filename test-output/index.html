@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods,   12 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="removeIteamFromcart">removeIteamFromcart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,62 +118,67 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="addProductTocart">addProductTocart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="addProductTocart">addProductTocart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.LoginTestcases" class="method navigator-link" hash-for-method="lockedLogin">lockedLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="checkOutTheorder">checkOutTheorder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.cartTestcases" class="method navigator-link" hash-for-method="removeIteamFromcart">removeIteamFromcart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="fillCheckoutDetials">fillCheckoutDetials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.LoginTestcases" class="method navigator-link" hash-for-method="sucessfulLogin">sucessfulLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.LoginTestcases" class="method navigator-link" hash-for-method="lockedLogin">lockedLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.cartTestcases" class="method navigator-link" hash-for-method="verifyCartPageOpened">verifyCartPageOpened</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.LoginTestcases" class="method navigator-link" hash-for-method="sucessfulLogin">sucessfulLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.cartTestcases" class="method navigator-link" hash-for-method="verifyContinueShoppingButton">verifyContinueShoppingButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="verifyCartPageOpened">verifyCartPageOpened</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.LoginTestcases" class="method navigator-link" hash-for-method="verifyErrorLoginMessage">verifyErrorLoginMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="verifyContinueShoppingButton">verifyContinueShoppingButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="verifyMenuContents">verifyMenuContents</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.LoginTestcases" class="method navigator-link" hash-for-method="verifyErrorLoginMessage">verifyErrorLoginMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="verifyProductRemovalFromCart">verifyProductRemovalFromCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="verifyMenuContents">verifyMenuContents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="verifySortFromZtoA">verifySortFromZtoA</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="verifyProductRemovalFromCart">verifyProductRemovalFromCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="verifySortOfProducts">verifySortOfProducts</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="verifySortFromZtoA">verifySortFromZtoA</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="regressionTest.ProductsTestcases" class="method navigator-link" hash-for-method="verifyTheCartCount">verifyTheCartCount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="verifySortOfProducts">verifySortOfProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.ProductsTestcases" class="method navigator-link" hash-for-method="verifyTheCartCount">verifyTheCartCount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -174,10 +193,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">regressionTest.cartTestcases</span>
+              <img src="failed.png"/>
+              <span class="class-name">TestPackage.cartTestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -185,6 +204,37 @@
                   <a name="removeIteamFromcart">
                   </a> <!-- removeIteamFromcart -->
                   <span class="method-name">removeIteamFromcart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [0]
+	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPackage.cartTestcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOutTheorder">
+                  </a> <!-- checkOutTheorder -->
+                  <span class="method-name">checkOutTheorder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillCheckoutDetials">
+                  </a> <!-- fillCheckoutDetials -->
+                  <span class="method-name">fillCheckoutDetials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -206,7 +256,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">regressionTest.LoginTestcases</span>
+              <span class="class-name">TestPackage.LoginTestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -235,7 +285,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">regressionTest.ProductsTestcases</span>
+              <span class="class-name">TestPackage.ProductsTestcases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -294,17 +344,17 @@
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;LoginTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regressionTest.LoginTestcases&quot;/&gt;
+      &lt;class name=&quot;TestPackage.LoginTestcases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginTest --&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ProductsTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regressionTest.ProductsTestcases&quot;/&gt;
+      &lt;class name=&quot;TestPackage.ProductsTestcases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ProductsTest --&gt;
   &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;CartTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regressionTest.cartTestcases&quot;/&gt;
+      &lt;class name=&quot;TestPackage.cartTestcases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CartTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -350,60 +400,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'removeIteamFromcart')
-data.setCell(0, 2, 'regressionTest.cartTestcases')
-data.setCell(0, 3, 7570);
+data.setCell(0, 2, 'TestPackage.cartTestcases')
+data.setCell(0, 3, 6188);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addProductTocart')
-data.setCell(1, 2, 'regressionTest.ProductsTestcases')
-data.setCell(1, 3, 6650);
+data.setCell(1, 2, 'TestPackage.ProductsTestcases')
+data.setCell(1, 3, 4194);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'sucessfulLogin')
-data.setCell(2, 2, 'regressionTest.LoginTestcases')
-data.setCell(2, 3, 5837);
+data.setCell(2, 1, 'checkOutTheorder')
+data.setCell(2, 2, 'TestPackage.cartTestcases')
+data.setCell(2, 3, 3680);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyErrorLoginMessage')
-data.setCell(3, 2, 'regressionTest.LoginTestcases')
-data.setCell(3, 3, 3064);
+data.setCell(3, 1, 'fillCheckoutDetials')
+data.setCell(3, 2, 'TestPackage.cartTestcases')
+data.setCell(3, 3, 3325);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyCartPageOpened')
-data.setCell(4, 2, 'regressionTest.cartTestcases')
-data.setCell(4, 3, 2415);
+data.setCell(4, 1, 'sucessfulLogin')
+data.setCell(4, 2, 'TestPackage.LoginTestcases')
+data.setCell(4, 3, 3243);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyContinueShoppingButton')
-data.setCell(5, 2, 'regressionTest.cartTestcases')
-data.setCell(5, 3, 2222);
+data.setCell(5, 1, 'verifyErrorLoginMessage')
+data.setCell(5, 2, 'TestPackage.LoginTestcases')
+data.setCell(5, 3, 2156);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyProductRemovalFromCart')
-data.setCell(6, 2, 'regressionTest.ProductsTestcases')
-data.setCell(6, 3, 2216);
+data.setCell(6, 1, 'lockedLogin')
+data.setCell(6, 2, 'TestPackage.LoginTestcases')
+data.setCell(6, 3, 1803);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'lockedLogin')
-data.setCell(7, 2, 'regressionTest.LoginTestcases')
-data.setCell(7, 3, 2204);
+data.setCell(7, 1, 'verifyProductRemovalFromCart')
+data.setCell(7, 2, 'TestPackage.ProductsTestcases')
+data.setCell(7, 3, 1707);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifySortFromZtoA')
-data.setCell(8, 2, 'regressionTest.ProductsTestcases')
-data.setCell(8, 3, 1997);
+data.setCell(8, 1, 'verifyContinueShoppingButton')
+data.setCell(8, 2, 'TestPackage.cartTestcases')
+data.setCell(8, 3, 1426);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyMenuContents')
-data.setCell(9, 2, 'regressionTest.ProductsTestcases')
-data.setCell(9, 3, 1437);
+data.setCell(9, 1, 'verifySortOfProducts')
+data.setCell(9, 2, 'TestPackage.ProductsTestcases')
+data.setCell(9, 3, 1207);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySortOfProducts')
-data.setCell(10, 2, 'regressionTest.ProductsTestcases')
-data.setCell(10, 3, 1234);
+data.setCell(10, 1, 'verifyCartPageOpened')
+data.setCell(10, 2, 'TestPackage.cartTestcases')
+data.setCell(10, 3, 1204);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyTheCartCount')
-data.setCell(11, 2, 'regressionTest.ProductsTestcases')
-data.setCell(11, 3, 1175);
+data.setCell(11, 1, 'verifySortFromZtoA')
+data.setCell(11, 2, 'TestPackage.ProductsTestcases')
+data.setCell(11, 3, 1190);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyTheCartCount')
+data.setCell(12, 2, 'TestPackage.ProductsTestcases')
+data.setCell(12, 3, 1058);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyMenuContents')
+data.setCell(13, 2, 'TestPackage.ProductsTestcases')
+data.setCell(13, 3, 980);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -429,123 +487,124 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.LoginTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">lockedLogin</span>
-                <span class="method-start">6179 ms</span>
+                <span class="method-name">checkOutTheorder</span>
+                <span class="method-start">5541 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.cartTestcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">removeIteamFromcart</span>
-                <span class="method-start">6329 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addProductTocart</span>
-                <span class="method-start">7475 ms</span>
+                <span class="method-start">6608 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.LoginTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">lockedLogin</span>
+                <span class="method-start">7126 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sucessfulLogin</span>
-                <span class="method-start">8391 ms</span>
+                <span class="method-start">8929 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyCartPageOpened</span>
-                <span class="method-start">13910 ms</span>
+                <span class="method-name">fillCheckoutDetials</span>
+                <span class="method-start">9221 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyMenuContents</span>
-                <span class="method-start">14133 ms</span>
+                <span class="method-start">10802 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.LoginTestcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorLoginMessage</span>
-                <span class="method-start">14234 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyProductRemovalFromCart</span>
-                <span class="method-start">15574 ms</span>
+                <span class="method-start">11782 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyContinueShoppingButton</span>
-                <span class="method-start">16326 ms</span>
+                <span class="method-name">verifyErrorLoginMessage</span>
+                <span class="method-start">12204 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.LoginTestcases</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17320 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">removeIteamFromcart</span>
+                <span class="method-start">12546 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySortFromZtoA</span>
-                <span class="method-start">17806 ms</span>
+                <span class="method-start">13493 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18553 ms</span>
+                <span class="method-start">14365 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionTest.ProductsTestcases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifySortOfProducts</span>
-                <span class="method-start">19804 ms</span>
+                <span class="method-start">14683 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTheCartCount</span>
-                <span class="method-start">21038 ms</span>
+                <span class="method-start">15894 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22216 ms</span>
+                <span class="method-start">16952 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCartPageOpened</span>
+                <span class="method-start">18738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyContinueShoppingButton</span>
+                <span class="method-start">19942 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21370 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,4 +1,4 @@
-package regressionTest;
+package TestPackage;
 
 
 
@@ -44,7 +44,7 @@ public class cartTestcases extends BaseTest {
 		cartPage = new CartPage(driver);
 		
 		loginPages.navigateSwagLabs();
-		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		loginPages.signInUsernamePassword("performance_glitch_user", "secret_sauce");
 		productsPage.productPageOpened();
 		productsPage.addRandomIteamToCart();;
 		productsPage.clickCart();
@@ -76,6 +76,69 @@ public class cartTestcases extends BaseTest {
 		
 	}
 	
+	@Test
+	public void checkOutTheorder() {
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
+		cartPage = new CartPage(driver);
+		
+		
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		productsPage.productPageOpened();
+		productsPage.addRandomIteamToCart();;
+		productsPage.clickCart();
+		Assert.assertEquals(cartPage.clickCheckOut(), "Checkout: Your Information");
+		productsPage.clickBurgerMenu("Logout");
+
+		
+	}
+	
+	@Test
+	public void fillCheckoutDetials() {
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
+		cartPage = new CartPage(driver);
+		
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		productsPage.productPageOpened();
+		productsPage.addRandomIteamToCart();;
+		productsPage.clickCart();
+		cartPage.clickCheckOut();
+		
+		
+		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: First Name is required");
+		// click countine button ==> verify message  Error: First Name is required
+		
+		cartPage.enterFirstname("Hussam");
+		// fill firstname 
+		
+		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Last Name is required");
+		// click countine button ==> verify message Error: Last Name is required
+
+		cartPage.enterLasttname("Abd El Fattah");
+		// fill lastname 
+		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Postal Code is required");
+		
+		// click countine button ==> verify message Error: Postal Code is required
+		
+		cartPage.enterZipcode("44444");
+		cartPage.clickContinue();
+
+		
+		
+		// fill zipcode 
+		
+		
+		// click continue button 
+		
+		
+		productsPage.clickBurgerMenu("Logout");
+		
+	}
 	
 	
 	

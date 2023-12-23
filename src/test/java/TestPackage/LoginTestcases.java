@@ -1,4 +1,4 @@
-package regressionTest;
+package TestPackage;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
