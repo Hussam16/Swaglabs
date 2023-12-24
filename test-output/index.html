@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="removeIteamFromcart">removeIteamFromcart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="fillCheckoutDetials">fillCheckoutDetials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -128,12 +128,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="fillCheckoutDetials">fillCheckoutDetials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.LoginTestcases" class="method navigator-link" hash-for-method="lockedLogin">lockedLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestPackage.LoginTestcases" class="method navigator-link" hash-for-method="lockedLogin">lockedLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestPackage.cartTestcases" class="method navigator-link" hash-for-method="removeIteamFromcart">removeIteamFromcart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -201,17 +201,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="removeIteamFromcart">
-                  </a> <!-- removeIteamFromcart -->
-                  <span class="method-name">removeIteamFromcart</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [2] but found [0]
-	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:52)
+                  <a name="fillCheckoutDetials">
+                  </a> <!-- fillCheckoutDetials -->
+                  <span class="method-name">fillCheckoutDetials</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Title is not Matching expected [Checkout: Overview] but found [Checkout: Your Information]
+	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:129)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 24 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -232,9 +233,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="fillCheckoutDetials">
-                  </a> <!-- fillCheckoutDetials -->
-                  <span class="method-name">fillCheckoutDetials</span>
+                  <a name="removeIteamFromcart">
+                  </a> <!-- removeIteamFromcart -->
+                  <span class="method-name">removeIteamFromcart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -402,66 +403,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removeIteamFromcart')
+data.setCell(0, 1, 'checkOutTheorder')
 data.setCell(0, 2, 'TestPackage.cartTestcases')
-data.setCell(0, 3, 6188);
+data.setCell(0, 3, 25423);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addProductTocart')
 data.setCell(1, 2, 'TestPackage.ProductsTestcases')
-data.setCell(1, 3, 4194);
+data.setCell(1, 3, 25132);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkOutTheorder')
-data.setCell(2, 2, 'TestPackage.cartTestcases')
-data.setCell(2, 3, 3680);
+data.setCell(2, 1, 'lockedLogin')
+data.setCell(2, 2, 'TestPackage.LoginTestcases')
+data.setCell(2, 3, 22059);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'fillCheckoutDetials')
 data.setCell(3, 2, 'TestPackage.cartTestcases')
-data.setCell(3, 3, 3325);
+data.setCell(3, 3, 8950);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'sucessfulLogin')
-data.setCell(4, 2, 'TestPackage.LoginTestcases')
-data.setCell(4, 3, 3243);
+data.setCell(4, 1, 'removeIteamFromcart')
+data.setCell(4, 2, 'TestPackage.cartTestcases')
+data.setCell(4, 3, 6192);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyErrorLoginMessage')
 data.setCell(5, 2, 'TestPackage.LoginTestcases')
-data.setCell(5, 3, 2156);
+data.setCell(5, 3, 2351);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'lockedLogin')
+data.setCell(6, 1, 'sucessfulLogin')
 data.setCell(6, 2, 'TestPackage.LoginTestcases')
-data.setCell(6, 3, 1803);
+data.setCell(6, 3, 2037);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyProductRemovalFromCart')
 data.setCell(7, 2, 'TestPackage.ProductsTestcases')
-data.setCell(7, 3, 1707);
+data.setCell(7, 3, 1584);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyContinueShoppingButton')
-data.setCell(8, 2, 'TestPackage.cartTestcases')
-data.setCell(8, 3, 1426);
+data.setCell(8, 1, 'verifyMenuContents')
+data.setCell(8, 2, 'TestPackage.ProductsTestcases')
+data.setCell(8, 3, 1398);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifySortOfProducts')
+data.setCell(9, 1, 'verifySortFromZtoA')
 data.setCell(9, 2, 'TestPackage.ProductsTestcases')
-data.setCell(9, 3, 1207);
+data.setCell(9, 3, 1245);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyCartPageOpened')
-data.setCell(10, 2, 'TestPackage.cartTestcases')
-data.setCell(10, 3, 1204);
+data.setCell(10, 1, 'verifySortOfProducts')
+data.setCell(10, 2, 'TestPackage.ProductsTestcases')
+data.setCell(10, 3, 1136);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySortFromZtoA')
-data.setCell(11, 2, 'TestPackage.ProductsTestcases')
-data.setCell(11, 3, 1190);
+data.setCell(11, 1, 'verifyContinueShoppingButton')
+data.setCell(11, 2, 'TestPackage.cartTestcases')
+data.setCell(11, 3, 1109);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'verifyTheCartCount')
 data.setCell(12, 2, 'TestPackage.ProductsTestcases')
-data.setCell(12, 3, 1058);
+data.setCell(12, 3, 954);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyMenuContents')
-data.setCell(13, 2, 'TestPackage.ProductsTestcases')
-data.setCell(13, 3, 980);
+data.setCell(13, 1, 'verifyCartPageOpened')
+data.setCell(13, 2, 'TestPackage.cartTestcases')
+data.setCell(13, 3, 942);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -487,13 +488,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
@@ -501,57 +495,56 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">8 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">checkOutTheorder</span>
-                <span class="method-start">5541 ms</span>
+                <span class="method-name">lockedLogin</span>
+                <span class="method-start">5391 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addProductTocart</span>
-                <span class="method-start">6608 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">lockedLogin</span>
-                <span class="method-start">7126 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">sucessfulLogin</span>
-                <span class="method-start">8929 ms</span>
+                <span class="method-start">6192 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">fillCheckoutDetials</span>
-                <span class="method-start">9221 ms</span>
+                <span class="method-name">checkOutTheorder</span>
+                <span class="method-start">6296 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sucessfulLogin</span>
+                <span class="method-start">27455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyErrorLoginMessage</span>
+                <span class="method-start">29501 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyMenuContents</span>
-                <span class="method-start">10802 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyProductRemovalFromCart</span>
-                <span class="method-start">11782 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyErrorLoginMessage</span>
-                <span class="method-start">12204 ms</span>
+                <span class="method-start">31328 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -559,52 +552,57 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">removeIteamFromcart</span>
-                <span class="method-start">12546 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySortFromZtoA</span>
-                <span class="method-start">13493 ms</span>
+                <span class="method-name">fillCheckoutDetials</span>
+                <span class="method-start">31719 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.LoginTestcases</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14365 ms</span>
+                <span class="method-start">31862 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.ProductsTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">verifyProductRemovalFromCart</span>
+                <span class="method-start">32726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySortFromZtoA</span>
+                <span class="method-start">34316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">verifySortOfProducts</span>
-                <span class="method-start">14683 ms</span>
+                <span class="method-start">35563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTheCartCount</span>
-                <span class="method-start">15894 ms</span>
+                <span class="method-start">36700 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16952 ms</span>
+                <span class="method-start">37675 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestPackage.cartTestcases</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">removeIteamFromcart</span>
+                <span class="method-start">40679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">verifyCartPageOpened</span>
-                <span class="method-start">18738 ms</span>
+                <span class="method-start">46871 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyContinueShoppingButton</span>
-                <span class="method-start">19942 ms</span>
+                <span class="method-start">47829 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21370 ms</span>
+                <span class="method-start">48938 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

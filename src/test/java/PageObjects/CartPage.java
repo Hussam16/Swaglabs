@@ -20,17 +20,42 @@ public class CartPage extends Pagebase {
 	private By firstNameField=By.cssSelector("input[id='first-name']");
 	private By lastNameField=By.cssSelector("input[id='last-name']");
 	private By zipcodeField=By.cssSelector("input[id='postal-code']");
+	
+	private By shippingFormation=By.cssSelector("div[class='subheader']");
+	private By fininshButton=By.cssSelector("a[class='btn_action cart_button']");
+	private By thanksMessage=By.cssSelector("h2[class='complete-header']");
+	
+	
+	
+	
 
 	public CartPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
+	public String verifyThanksMessage() {
+		return getMessage(thanksMessage);
+		
+	}
+	
+	public void clickFininshButton() {
+		clickButton(fininshButton);
+		
+	}
+	
 	public String cartPageOpened() {
 
 		return waitForElement(cartPageTitle).getText();
 
 	}
+	
+	public String checkOutOverviewOpened() {
+		
+		 return waitForElement(shippingFormation).getText();
+		
+	}
+	
 
 	public int removeProduct() {
 

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regressionTest.cartTestcases">
+      <class name="TestPackage.cartTestcases">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
           <include name="fillCheckoutDetials"/>
         </methods>
-      </class> <!-- regressionTest.cartTestcases -->
+      </class> <!-- TestPackage.cartTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

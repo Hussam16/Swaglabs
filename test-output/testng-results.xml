@@ -2,97 +2,91 @@
 <testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-23T14:59:37 EET" name="Suite" finished-at="2023-12-23T14:59:59 EET" duration-ms="22893">
+  <suite started-at="2023-12-25T00:43:45 EET" name="Suite" finished-at="2023-12-25T00:44:35 EET" duration-ms="50068">
     <groups>
     </groups>
-    <test started-at="2023-12-23T14:59:37 EET" name="LoginTest" finished-at="2023-12-23T14:59:53 EET" duration-ms="16746">
+    <test started-at="2023-12-25T00:43:45 EET" name="LoginTest" finished-at="2023-12-25T00:44:20 EET" duration-ms="34664">
       <class name="TestPackage.LoginTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-23T14:59:37 EET" name="setup" finished-at="2023-12-23T14:59:44 EET" duration-ms="7125" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-25T00:43:45 EET" name="setup" finished-at="2023-12-25T00:43:50 EET" duration-ms="5349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="lockedLogin()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-23T14:59:44 EET" name="lockedLogin" finished-at="2023-12-23T14:59:45 EET" duration-ms="1803" status="PASS">
+        <test-method signature="lockedLogin()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-25T00:43:50 EET" name="lockedLogin" finished-at="2023-12-25T00:44:13 EET" duration-ms="22059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedLogin -->
-        <test-method signature="sucessfulLogin()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-23T14:59:45 EET" name="sucessfulLogin" finished-at="2023-12-23T14:59:49 EET" duration-ms="3243" status="PASS">
+        <test-method signature="sucessfulLogin()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-25T00:44:13 EET" name="sucessfulLogin" finished-at="2023-12-25T00:44:15 EET" duration-ms="2037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sucessfulLogin -->
-        <test-method signature="verifyErrorLoginMessage()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-23T14:59:49 EET" name="verifyErrorLoginMessage" finished-at="2023-12-23T14:59:51 EET" duration-ms="2156" status="PASS">
+        <test-method signature="verifyErrorLoginMessage()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-25T00:44:15 EET" name="verifyErrorLoginMessage" finished-at="2023-12-25T00:44:17 EET" duration-ms="2351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorLoginMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-23T14:59:51 EET" name="tearDown" finished-at="2023-12-23T14:59:53 EET" duration-ms="2374" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.LoginTestcases@4d5d943d]" started-at="2023-12-25T00:44:17 EET" name="tearDown" finished-at="2023-12-25T00:44:20 EET" duration-ms="2798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestPackage.LoginTestcases -->
     </test> <!-- LoginTest -->
-    <test started-at="2023-12-23T14:59:37 EET" name="ProductsTest" finished-at="2023-12-23T14:59:55 EET" duration-ms="18868">
+    <test started-at="2023-12-25T00:43:45 EET" name="ProductsTest" finished-at="2023-12-25T00:44:24 EET" duration-ms="38925">
       <class name="TestPackage.ProductsTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:37 EET" name="setup" finished-at="2023-12-23T14:59:43 EET" duration-ms="6608" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:43:45 EET" name="setup" finished-at="2023-12-25T00:43:51 EET" duration-ms="6191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addProductTocart()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:43 EET" name="addProductTocart" finished-at="2023-12-23T14:59:47 EET" duration-ms="4194" status="PASS">
+        <test-method signature="addProductTocart()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:43:51 EET" name="addProductTocart" finished-at="2023-12-25T00:44:16 EET" duration-ms="25132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductTocart -->
-        <test-method signature="verifyMenuContents()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:47 EET" name="verifyMenuContents" finished-at="2023-12-23T14:59:48 EET" duration-ms="980" status="PASS">
+        <test-method signature="verifyMenuContents()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:16 EET" name="verifyMenuContents" finished-at="2023-12-25T00:44:18 EET" duration-ms="1398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMenuContents -->
-        <test-method signature="verifyProductRemovalFromCart()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:48 EET" name="verifyProductRemovalFromCart" finished-at="2023-12-23T14:59:50 EET" duration-ms="1707" status="PASS">
+        <test-method signature="verifyProductRemovalFromCart()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:18 EET" name="verifyProductRemovalFromCart" finished-at="2023-12-25T00:44:19 EET" duration-ms="1584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductRemovalFromCart -->
-        <test-method signature="verifySortFromZtoA()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:50 EET" name="verifySortFromZtoA" finished-at="2023-12-23T14:59:51 EET" duration-ms="1190" status="PASS">
+        <test-method signature="verifySortFromZtoA()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:19 EET" name="verifySortFromZtoA" finished-at="2023-12-25T00:44:21 EET" duration-ms="1245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortFromZtoA -->
-        <test-method signature="verifySortOfProducts()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:51 EET" name="verifySortOfProducts" finished-at="2023-12-23T14:59:52 EET" duration-ms="1207" status="PASS">
+        <test-method signature="verifySortOfProducts()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:21 EET" name="verifySortOfProducts" finished-at="2023-12-25T00:44:22 EET" duration-ms="1136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortOfProducts -->
-        <test-method signature="verifyTheCartCount()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:52 EET" name="verifyTheCartCount" finished-at="2023-12-23T14:59:53 EET" duration-ms="1058" status="PASS">
+        <test-method signature="verifyTheCartCount()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:22 EET" name="verifyTheCartCount" finished-at="2023-12-25T00:44:23 EET" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheCartCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-23T14:59:53 EET" name="tearDown" finished-at="2023-12-23T14:59:55 EET" duration-ms="1909" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.ProductsTestcases@6a78afa0]" started-at="2023-12-25T00:44:23 EET" name="tearDown" finished-at="2023-12-25T00:44:24 EET" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestPackage.ProductsTestcases -->
     </test> <!-- ProductsTest -->
-    <test started-at="2023-12-23T14:59:37 EET" name="CartTest" finished-at="2023-12-23T14:59:59 EET" duration-ms="22892">
+    <test started-at="2023-12-25T00:43:45 EET" name="CartTest" finished-at="2023-12-25T00:44:35 EET" duration-ms="50068">
       <class name="TestPackage.cartTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:37 EET" name="setup" finished-at="2023-12-23T14:59:42 EET" duration-ms="5516" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:43:45 EET" name="setup" finished-at="2023-12-25T00:43:51 EET" duration-ms="6288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkOutTheorder()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:42 EET" name="checkOutTheorder" finished-at="2023-12-23T14:59:46 EET" duration-ms="3680" status="PASS">
+        <test-method signature="checkOutTheorder()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:43:51 EET" name="checkOutTheorder" finished-at="2023-12-25T00:44:17 EET" duration-ms="25423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutTheorder -->
-        <test-method signature="fillCheckoutDetials()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:46 EET" name="fillCheckoutDetials" finished-at="2023-12-23T14:59:49 EET" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillCheckoutDetials -->
-        <test-method signature="removeIteamFromcart()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:49 EET" name="removeIteamFromcart" finished-at="2023-12-23T14:59:55 EET" duration-ms="6188" status="FAIL">
+        <test-method signature="fillCheckoutDetials()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:44:17 EET" name="fillCheckoutDetials" finished-at="2023-12-25T00:44:26 EET" duration-ms="8950" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [2] but found [0]]]>
+              <![CDATA[The following asserts failed:
+Title is not Matching expected [Checkout: Overview] but found [Checkout: Your Information]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2] but found [0]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1240)
-at org.testng.Assert.assertEquals(Assert.java:1274)
-at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:52)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title is not Matching expected [Checkout: Overview] but found [Checkout: Your Information]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:129)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,16 +115,20 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- fillCheckoutDetials -->
+        <test-method signature="removeIteamFromcart()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:44:26 EET" name="removeIteamFromcart" finished-at="2023-12-25T00:44:32 EET" duration-ms="6192" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- removeIteamFromcart -->
-        <test-method signature="verifyCartPageOpened()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:55 EET" name="verifyCartPageOpened" finished-at="2023-12-23T14:59:56 EET" duration-ms="1204" status="PASS">
+        <test-method signature="verifyCartPageOpened()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:44:32 EET" name="verifyCartPageOpened" finished-at="2023-12-25T00:44:33 EET" duration-ms="942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartPageOpened -->
-        <test-method signature="verifyContinueShoppingButton()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:56 EET" name="verifyContinueShoppingButton" finished-at="2023-12-23T14:59:58 EET" duration-ms="1426" status="PASS">
+        <test-method signature="verifyContinueShoppingButton()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:44:33 EET" name="verifyContinueShoppingButton" finished-at="2023-12-25T00:44:34 EET" duration-ms="1109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContinueShoppingButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-23T14:59:58 EET" name="tearDown" finished-at="2023-12-23T14:59:59 EET" duration-ms="1516" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.cartTestcases@7dcf94f8]" started-at="2023-12-25T00:44:34 EET" name="tearDown" finished-at="2023-12-25T00:44:35 EET" duration-ms="1126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

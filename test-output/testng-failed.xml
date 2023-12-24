@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="removeIteamFromcart"/>
+          <include name="fillCheckoutDetials"/>
         </methods>
       </class> <!-- TestPackage.cartTestcases -->
     </classes>
