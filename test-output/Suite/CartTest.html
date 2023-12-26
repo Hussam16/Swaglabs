@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CartTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 25 00:43:45 EET 2023</td>
+<td>Started on:</td><td>Tue Dec 26 21:41:48 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>50 seconds (50068 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46496 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,142 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestPackage.cartTestcases.fillCheckoutDetials()'><b>fillCheckoutDetials</b><br>Test class: TestPackage.cartTestcases</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Title is not Matching expected [Checkout: Overview] but found [Checkout: Your Information]
-	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:129)
+<td title='TestPackage.cartTestcases.removeIteamFromcart()'><b>removeIteamFromcart</b><br>Test class: TestPackage.cartTestcases</td>
+<td><div><pre>java.lang.AssertionError: expected [3] but found [0]
+	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:50)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace35154134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace35154134'><pre>java.lang.AssertionError: The following asserts failed:
-	Title is not Matching expected [Checkout: Overview] but found [Checkout: Your Information]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:129)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445178570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445178570'><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
+<tr>
+<td title='TestPackage.cartTestcases.fillCheckoutDetials()'><b>fillCheckoutDetials</b><br>Test class: TestPackage.cartTestcases</td>
+<td><div><pre>java.lang.AssertionError: expected [Error: Posta Code is required] but found [Error: Postal Code is required]
+	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace805147011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805147011'><pre>java.lang.AssertionError: expected [Error: Posta Code is required] but found [Error: Postal Code is required]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>2</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestPackage.cartTestcases.checkOutTheorder()'><b>checkOutTheorder</b><br>Test class: TestPackage.cartTestcases</td>
+<td></td>
+<td>21</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
+<tr>
+<td title='TestPackage.cartTestcases.verifyCartPageOpened()'><b>verifyCartPageOpened</b><br>Test class: TestPackage.cartTestcases</td>
+<td></td>
+<td>0</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
+<tr>
+<td title='TestPackage.cartTestcases.verifyContinueShoppingButton()'><b>verifyContinueShoppingButton</b><br>Test class: TestPackage.cartTestcases</td>
+<td></td>
+<td>1</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestPackage.cartTestcases.removeIteamFromcart()'><b>removeIteamFromcart</b><br>Test class: TestPackage.cartTestcases</td>
+<td><div><pre>java.lang.AssertionError: expected [3] but found [0]
+	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569868962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569868962'><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,36 +235,52 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>8</td>
-<td>TestPackage.cartTestcases@7dcf94f8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>5</td>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
 <tr>
-<td title='TestPackage.cartTestcases.checkOutTheorder()'><b>checkOutTheorder</b><br>Test class: TestPackage.cartTestcases</td>
-<td></td>
-<td>25</td>
-<td>TestPackage.cartTestcases@7dcf94f8</td></tr>
-<tr>
-<td title='TestPackage.cartTestcases.removeIteamFromcart()'><b>removeIteamFromcart</b><br>Test class: TestPackage.cartTestcases</td>
-<td></td>
-<td>6</td>
-<td>TestPackage.cartTestcases@7dcf94f8</td></tr>
-<tr>
-<td title='TestPackage.cartTestcases.verifyContinueShoppingButton()'><b>verifyContinueShoppingButton</b><br>Test class: TestPackage.cartTestcases</td>
-<td></td>
+<td title='TestPackage.cartTestcases.fillCheckoutDetials()'><b>fillCheckoutDetials</b><br>Test class: TestPackage.cartTestcases</td>
+<td><div><pre>java.lang.AssertionError: expected [Error: Posta Code is required] but found [Error: Postal Code is required]
+	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439347737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439347737'><pre>java.lang.AssertionError: expected [Error: Posta Code is required] but found [Error: Postal Code is required]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
 <td>1</td>
-<td>TestPackage.cartTestcases@7dcf94f8</td></tr>
-<tr>
-<td title='TestPackage.cartTestcases.verifyCartPageOpened()'><b>verifyCartPageOpened</b><br>Test class: TestPackage.cartTestcases</td>
-<td></td>
-<td>0</td>
-<td>TestPackage.cartTestcases@7dcf94f8</td></tr>
+<td>TestPackage.cartTestcases@1e800aaa</td></tr>
 </table><p>
 </body>
 </html>

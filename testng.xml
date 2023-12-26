@@ -2,12 +2,16 @@
 <suite name="Suite" parallel="tests" thread-count="3">
 
 
+	 <listeners>
+	 	<listener class-name="report.RetryListeners" />
+		<listener class-name="report.TestListener" />
+	</listeners> 
+
 	<test name="LoginTest">
 		<classes>
 			<class name="TestPackage.LoginTestcases" />
 		</classes>
 	</test>
-
 
 	<test name="ProductsTest">
 		<classes>
@@ -21,4 +25,5 @@
 			<class name="TestPackage.cartTestcases" />
 		</classes>
 	</test>
+
 </suite>

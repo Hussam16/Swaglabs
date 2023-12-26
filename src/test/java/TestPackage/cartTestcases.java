@@ -111,7 +111,7 @@ public class cartTestcases extends BaseTest {
 		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Last Name is required");
 
 		cartPage.enterLasttname("Abd El Fattah");
-		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Postal Code is required");
+		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Posta Code is required");
 
 		cartPage.enterZipcode("44444");
 		cartPage.clickContinue();
