@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="16" passed="12" failed="2" skipped="0">
+<testng-results ignored="0" total="15" passed="12" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-26T21:41:48 EET" name="Suite" finished-at="2023-12-26T21:42:35 EET" duration-ms="46496">
+  <suite started-at="2024-01-01T19:30:53 EET" name="Suite" finished-at="2024-01-01T19:31:30 EET" duration-ms="37469">
     <groups>
     </groups>
-    <test started-at="2023-12-26T21:41:48 EET" name="LoginTest" finished-at="2023-12-26T21:42:19 EET" duration-ms="30413">
+    <test started-at="2024-01-01T19:30:53 EET" name="LoginTest" finished-at="2024-01-01T19:31:22 EET" duration-ms="28920">
       <class name="TestPackage.LoginTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2023-12-26T21:41:48 EET" name="setup" finished-at="2023-12-26T21:41:55 EET" duration-ms="6893" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2024-01-01T19:30:53 EET" name="setup" finished-at="2024-01-01T19:30:58 EET" duration-ms="5430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="lockedLogin()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2023-12-26T21:41:55 EET" name="lockedLogin" finished-at="2023-12-26T21:42:01 EET" duration-ms="5578" status="PASS">
+        <test-method signature="lockedLogin()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2024-01-01T19:30:58 EET" name="lockedLogin" finished-at="2024-01-01T19:31:00 EET" duration-ms="1909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lockedLogin -->
-        <test-method signature="sucessfulLogin()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2023-12-26T21:42:01 EET" name="sucessfulLogin" finished-at="2023-12-26T21:42:13 EET" duration-ms="12386" status="PASS">
+        <test-method signature="sucessfulLogin()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2024-01-01T19:31:00 EET" name="sucessfulLogin" finished-at="2024-01-01T19:31:16 EET" duration-ms="16139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sucessfulLogin -->
-        <test-method signature="verifyErrorLoginMessage()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2023-12-26T21:42:13 EET" name="verifyErrorLoginMessage" finished-at="2023-12-26T21:42:17 EET" duration-ms="3765" status="PASS">
+        <test-method signature="verifyErrorLoginMessage()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2024-01-01T19:31:16 EET" name="verifyErrorLoginMessage" finished-at="2024-01-01T19:31:19 EET" duration-ms="3092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyErrorLoginMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2023-12-26T21:42:17 EET" name="tearDown" finished-at="2023-12-26T21:42:19 EET" duration-ms="1755" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.LoginTestcases@235834f2]" started-at="2024-01-01T19:31:19 EET" name="tearDown" finished-at="2024-01-01T19:31:22 EET" duration-ms="2294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestPackage.LoginTestcases -->
     </test> <!-- LoginTest -->
-    <test started-at="2023-12-26T21:41:48 EET" name="ProductsTest" finished-at="2023-12-26T21:42:25 EET" duration-ms="36659">
+    <test started-at="2024-01-01T19:30:53 EET" name="ProductsTest" finished-at="2024-01-01T19:31:24 EET" duration-ms="31788">
       <class name="TestPackage.ProductsTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:41:48 EET" name="setup" finished-at="2023-12-26T21:41:54 EET" duration-ms="5601" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:30:53 EET" name="setup" finished-at="2024-01-01T19:30:59 EET" duration-ms="6379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addProductTocart()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:41:54 EET" name="addProductTocart" finished-at="2023-12-26T21:42:18 EET" duration-ms="24391" status="PASS">
+        <test-method signature="addProductTocart()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:30:59 EET" name="addProductTocart" finished-at="2024-01-01T19:31:18 EET" duration-ms="19095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductTocart -->
-        <test-method signature="verifyMenuContents()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:18 EET" name="verifyMenuContents" finished-at="2023-12-26T21:42:19 EET" duration-ms="985" status="PASS">
+        <test-method signature="verifyMenuContents()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:18 EET" name="verifyMenuContents" finished-at="2024-01-01T19:31:19 EET" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMenuContents -->
-        <test-method signature="verifyProductRemovalFromCart()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:19 EET" name="verifyProductRemovalFromCart" finished-at="2023-12-26T21:42:21 EET" duration-ms="1515" status="PASS">
+        <test-method signature="verifyProductRemovalFromCart()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:19 EET" name="verifyProductRemovalFromCart" finished-at="2024-01-01T19:31:20 EET" duration-ms="1398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductRemovalFromCart -->
-        <test-method signature="verifySortFromZtoA()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:21 EET" name="verifySortFromZtoA" finished-at="2023-12-26T21:42:22 EET" duration-ms="1093" status="PASS">
+        <test-method signature="verifySortFromZtoA()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:20 EET" name="verifySortFromZtoA" finished-at="2024-01-01T19:31:22 EET" duration-ms="1214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortFromZtoA -->
-        <test-method signature="verifySortOfProducts()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:22 EET" name="verifySortOfProducts" finished-at="2023-12-26T21:42:23 EET" duration-ms="1007" status="PASS">
+        <test-method signature="verifySortOfProducts()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:22 EET" name="verifySortOfProducts" finished-at="2024-01-01T19:31:23 EET" duration-ms="908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySortOfProducts -->
-        <test-method signature="verifyTheCartCount()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:23 EET" name="verifyTheCartCount" finished-at="2023-12-26T21:42:24 EET" duration-ms="902" status="PASS">
+        <test-method signature="verifyTheCartCount()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:23 EET" name="verifyTheCartCount" finished-at="2024-01-01T19:31:23 EET" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheCartCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2023-12-26T21:42:24 EET" name="tearDown" finished-at="2023-12-26T21:42:25 EET" duration-ms="1106" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.ProductsTestcases@229f66ed]" started-at="2024-01-01T19:31:23 EET" name="tearDown" finished-at="2024-01-01T19:31:24 EET" duration-ms="1081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestPackage.ProductsTestcases -->
     </test> <!-- ProductsTest -->
-    <test started-at="2023-12-26T21:41:48 EET" name="CartTest" finished-at="2023-12-26T21:42:35 EET" duration-ms="46496">
+    <test started-at="2024-01-01T19:30:53 EET" name="CartTest" finished-at="2024-01-01T19:31:30 EET" duration-ms="37469">
       <class name="TestPackage.cartTestcases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:41:48 EET" name="setup" finished-at="2023-12-26T21:41:55 EET" duration-ms="6319" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:30:53 EET" name="setup" finished-at="2024-01-01T19:30:59 EET" duration-ms="6223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkOutTheorder()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:41:55 EET" name="checkOutTheorder" finished-at="2023-12-26T21:42:16 EET" duration-ms="21277" status="PASS">
+        <test-method signature="checkOutTheorder()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:30:59 EET" name="checkOutTheorder" finished-at="2024-01-01T19:31:19 EET" duration-ms="19912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOutTheorder -->
-        <test-method retried="true" signature="fillCheckoutDetials()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:16 EET" name="fillCheckoutDetials" finished-at="2023-12-26T21:42:18 EET" duration-ms="1713" status="SKIP">
+        <test-method signature="fillCheckoutDetials()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:19 EET" name="fillCheckoutDetials" finished-at="2024-01-01T19:31:21 EET" duration-ms="2133" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Error: Posta Code is required] but found [Error: Postal Code is required]]]>
@@ -118,56 +118,13 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillCheckoutDetials -->
-        <test-method signature="fillCheckoutDetials()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:18 EET" name="fillCheckoutDetials" finished-at="2023-12-26T21:42:20 EET" duration-ms="2396" status="FAIL">
+        <test-method signature="removeIteamFromcart()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:21 EET" name="removeIteamFromcart" finished-at="2024-01-01T19:31:27 EET" duration-ms="5912" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Error: Posta Code is required] but found [Error: Postal Code is required]]]>
+              <![CDATA[expected [2] but found [0]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Error: Posta Code is required] but found [Error: Postal Code is required]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at TestPackage.cartTestcases.fillCheckoutDetials(cartTestcases.java:114)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillCheckoutDetials -->
-        <test-method retried="true" signature="removeIteamFromcart()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:20 EET" name="removeIteamFromcart" finished-at="2023-12-26T21:42:26 EET" duration-ms="5854" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [3] but found [0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [3] but found [0]
+              <![CDATA[java.lang.AssertionError: expected [2] but found [0]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -204,58 +161,58 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeIteamFromcart -->
-        <test-method signature="removeIteamFromcart()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:26 EET" name="removeIteamFromcart" finished-at="2023-12-26T21:42:32 EET" duration-ms="5869" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [3] but found [0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [3] but found [0]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1240)
-at org.testng.Assert.assertEquals(Assert.java:1274)
-at TestPackage.cartTestcases.removeIteamFromcart(cartTestcases.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeIteamFromcart -->
-        <test-method signature="verifyCartPageOpened()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:32 EET" name="verifyCartPageOpened" finished-at="2023-12-26T21:42:33 EET" duration-ms="901" status="PASS">
+        <test-method signature="verifyCartPageOpened()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:27 EET" name="verifyCartPageOpened" finished-at="2024-01-01T19:31:28 EET" duration-ms="964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartPageOpened -->
-        <test-method signature="verifyContinueShoppingButton()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:33 EET" name="verifyContinueShoppingButton" finished-at="2023-12-26T21:42:34 EET" duration-ms="1022" status="PASS">
+        <test-method signature="verifyContinueShoppingButton()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:28 EET" name="verifyContinueShoppingButton" finished-at="2024-01-01T19:31:29 EET" duration-ms="996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContinueShoppingButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.cartTestcases@1e800aaa]" started-at="2023-12-26T21:42:34 EET" name="tearDown" finished-at="2023-12-26T21:42:35 EET" duration-ms="1121" status="PASS">
+        <test-method signature="verifyProductPriceValidDuringCheckoutProcess()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:29 EET" name="verifyProductPriceValidDuringCheckoutProcess" finished-at="2024-01-01T19:31:29 EET" duration-ms="234" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 2 out of bounds for length 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at PageObjects.ProductsPage.getRandomProductPrice(ProductsPage.java:41)
+at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPriceValidDuringCheckoutProcess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPackage.cartTestcases@185a6e9]" started-at="2024-01-01T19:31:29 EET" name="tearDown" finished-at="2024-01-01T19:31:30 EET" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

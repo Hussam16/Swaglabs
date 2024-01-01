@@ -19,13 +19,50 @@ public class ProductsPage extends Pagebase {
 	private By burgerMenu = By.cssSelector("div[class='bm-burger-button']");
 	private By menuList = By.cssSelector("a[class='bm-item menu-item']");
 	private By cartIcon = By.cssSelector("span[class='fa-layers-counter shopping_cart_badge']");
+	private By productPrice=By.cssSelector("div[class='inventory_item_price']");
 
 	public ProductsPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test
+	
+	
+	
+	
+	public String getRandomProductPrice() {
+		
+		List<WebElement> listElements = driver.findElements(productPrice);
+		Random random = new Random();
+		int randomIndex = random.nextInt(listElements.size());
+		WebElement price = listElements.get(randomIndex);
+		String productPrice=price.getText();
+		List<WebElement> listButtons = driver.findElements(cartButton);
+		listButtons.get(randomIndex).click();
+		
+		return productPrice.replace("$", "");
+		
+		
+		
+
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public String productPageOpened() {
 
 		return getMessage(productLabel);

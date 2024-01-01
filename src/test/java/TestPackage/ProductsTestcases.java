@@ -22,7 +22,7 @@ public class ProductsTestcases extends BaseTest {
 
 
 
-	@Test
+	@Test(description = "Add Product To Cart")
 	public void addProductTocart() {
 		
 		loginPages = new LoginPages(driver);
@@ -37,7 +37,7 @@ public class ProductsTestcases extends BaseTest {
 	}
 
 	// from low to High
-	@Test
+	@Test(description = "verify SortOf Products From High to Low(")
 	public void verifySortOfProducts() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -75,7 +75,7 @@ public class ProductsTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "verify Sort From ZtoA")
 	public void verifySortFromZtoA() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -99,7 +99,7 @@ public class ProductsTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "verify Menu Contents")
 	public void verifyMenuContents() throws InterruptedException {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -111,7 +111,7 @@ public class ProductsTestcases extends BaseTest {
 
 	}
 	
-	@Test
+	@Test(description = "verify The Cart Count")
 	public void verifyTheCartCount()  {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -127,7 +127,7 @@ public class ProductsTestcases extends BaseTest {
 	}
 	
 	
-	@Test
+	@Test(description = "verify Product Removal From Cart")
 	public void verifyProductRemovalFromCart() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);

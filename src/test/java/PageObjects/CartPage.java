@@ -24,6 +24,7 @@ public class CartPage extends Pagebase {
 	private By shippingFormation=By.cssSelector("div[class='subheader']");
 	private By fininshButton=By.cssSelector("a[class='btn_action cart_button']");
 	private By thanksMessage=By.cssSelector("h2[class='complete-header']");
+	private By inventoryItemPrice=By.cssSelector("div[class='inventory_item_price']");
 	
 	
 	
@@ -32,6 +33,12 @@ public class CartPage extends Pagebase {
 	public CartPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
+	}
+	
+	public String getProductPriceCheckout() {
+		
+		return getMessage(inventoryItemPrice);
+		
 	}
 
 	public String verifyThanksMessage() {

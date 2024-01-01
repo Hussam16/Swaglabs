@@ -15,7 +15,7 @@ public class LoginTestcases extends BaseTest {
 	private ProductsPage productsPage; 
 
 
-	@Test
+	@Test(description = "sucessful Login")
 	public void sucessfulLogin() {
 
 		loginPages = new LoginPages(driver);
@@ -27,7 +27,7 @@ public class LoginTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "verify Error Login Message")
 	public void verifyErrorLoginMessage() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -41,7 +41,7 @@ public class LoginTestcases extends BaseTest {
 		
 	}
 	
-	@Test
+	@Test(description = "locked Login")
 	public void lockedLogin() {
 		
 		loginPages = new LoginPages(driver);

@@ -18,7 +18,7 @@ public class cartTestcases extends BaseTest {
 	private ProductsPage productsPage;
 	private CartPage cartPage;
 
-	@Test
+	@Test(description = "verify Cart Page 'sOpened")
 	public void verifyCartPageOpened() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -34,7 +34,7 @@ public class cartTestcases extends BaseTest {
 		productsPage.clickBurgerMenu("Logout");
 	}
 
-	@Test
+	@Test(description = "remove Item From the cart")
 	public void removeIteamFromcart() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
@@ -52,7 +52,7 @@ public class cartTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "Verify Continue Shopping Button")
 	public void verifyContinueShoppingButton() {
 
 		loginPages = new LoginPages(driver);
@@ -72,7 +72,7 @@ public class cartTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "Verify checkout process")
 	public void checkOutTheorder() {
 
 		loginPages = new LoginPages(driver);
@@ -90,7 +90,7 @@ public class cartTestcases extends BaseTest {
 
 	}
 
-	@Test
+	@Test(description = "Verify user 's able to fill courier detials")
 	public void fillCheckoutDetials() {
 
 		loginPages = new LoginPages(driver);
@@ -111,7 +111,7 @@ public class cartTestcases extends BaseTest {
 		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Last Name is required");
 
 		cartPage.enterLasttname("Abd El Fattah");
-		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Posta Code is required");
+		Assert.assertEquals(cartPage.clickContinueVerifyMessage(), "Error: Postal Code is required");
 
 		cartPage.enterZipcode("44444");
 		cartPage.clickContinue();
@@ -125,5 +125,37 @@ public class cartTestcases extends BaseTest {
 		productsPage.clickBurgerMenu("Logout");
 
 	}
+	
+	
+	
+	@Test(description = "verify Product Price Valid During Checkout Process")
+	public void verifyProductPriceValidDuringCheckoutProcess() {
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
+		cartPage = new CartPage(driver);
+
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		String priceAtProductPage=productsPage.getRandomProductPrice();
+		productsPage.clickCart();
+		Assert.assertEquals(cartPage.getProductPriceCheckout(), priceAtProductPage);
+
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

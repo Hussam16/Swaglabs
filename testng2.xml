@@ -1,14 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-	<test thread-count="1" name="Test">
-		<classes>
-			<class name="regressionTest.LoginTestcases" />
-			<class name="regressionTest.ProductsTestcases" />
-			
+<suite name="Suite" parallel="tests" thread-count="3">
 
+
+	<test name="LoginTest">
+		<classes>
+			<class name="TestPackage.LoginTestcases" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+
+	<test name="ProductsTest">
+		<classes>
+			<class name="TestPackage.ProductsTestcases" />
+		</classes>
+	</test>
+
+
+	<test name="CartTest">
+		<classes>
+			<class name="TestPackage.cartTestcases" />
+		</classes>
+	</test>
+
+</suite>
