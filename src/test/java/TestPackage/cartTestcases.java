@@ -20,9 +20,9 @@ public class cartTestcases extends BaseTest {
 
 	@Test(description = "verify Cart Page 'sOpened")
 	public void verifyCartPageOpened() {
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		cartPage = new CartPage(driver);
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		// productsPage.productPageOpened();
@@ -36,9 +36,9 @@ public class cartTestcases extends BaseTest {
 
 	@Test(description = "remove Item From the cart")
 	public void removeIteamFromcart() {
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		cartPage = new CartPage(driver);
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("performance_glitch_user", "secret_sauce");
@@ -54,10 +54,10 @@ public class cartTestcases extends BaseTest {
 
 	@Test(description = "Verify Continue Shopping Button")
 	public void verifyContinueShoppingButton() {
-
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		cartPage = new CartPage(driver);
+//
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
@@ -75,9 +75,9 @@ public class cartTestcases extends BaseTest {
 	@Test(description = "Verify checkout process")
 	public void checkOutTheorder() {
 
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		cartPage = new CartPage(driver);
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
@@ -93,9 +93,9 @@ public class cartTestcases extends BaseTest {
 	@Test(description = "Verify user 's able to fill courier detials")
 	public void fillCheckoutDetials() {
 
-		loginPages = new LoginPages(driver);
-		productsPage = new ProductsPage(driver);
-		cartPage = new CartPage(driver);
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
@@ -128,22 +128,58 @@ public class cartTestcases extends BaseTest {
 	
 	
 	
-	@Test(description = "verify Product Price Valid During Checkout Process")
-	public void verifyProductPriceValidDuringCheckoutProcess() {
-		
+
+	@BeforeMethod
+	public void intinilze() {
 		loginPages = new LoginPages(driver);
 		productsPage = new ProductsPage(driver);
 		cartPage = new CartPage(driver);
+
+	}
+	
+	
+	
+	@Test(description = "verify Product Price Valid During Checkout Process")
+	public void verifyProductPriceValidDuringCheckoutProcess() {
+		
+//		loginPages = new LoginPages(driver);
+//		productsPage = new ProductsPage(driver);
+//		cartPage = new CartPage(driver);
 
 		loginPages.navigateSwagLabs();
 		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
 		String priceAtProductPage=productsPage.getRandomProductPrice();
 		productsPage.clickCart();
 		Assert.assertEquals(cartPage.getProductPriceCheckout(), priceAtProductPage);
+		productsPage.clickBurgerMenu("Logout");
 
 		
 		
 	}
+	
+	@Test(description = "Verify the prices of all the products 's equal to the total price")
+	public void verifyTotalPrice() {
+		
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("performance_glitch_user", "secret_sauce");
+		productsPage.addProductToCart(1);
+		productsPage.addProductToCart(2);
+		productsPage.clickCart();
+		double totalProducts = cartPage.sumOfProductprices();
+		cartPage.clickCheckOut();
+		cartPage.enterFirstname("Hussam");
+		cartPage.enterLasttname("Abd El Fattah");
+		cartPage.enterZipcode("44444");
+		cartPage.clickContinue();
+		String totalIteamPrice=cartPage.itemTotalPrice().substring("Item total: $".length());
+		Assert.assertEquals(Double.toString(totalProducts),totalIteamPrice);
+		productsPage.clickBurgerMenu("Logout");
+		
+	}
+	
+	
+	
+	
 	
 	
 	

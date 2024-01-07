@@ -1,5 +1,7 @@
 package PageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +27,7 @@ public class CartPage extends Pagebase {
 	private By fininshButton=By.cssSelector("a[class='btn_action cart_button']");
 	private By thanksMessage=By.cssSelector("h2[class='complete-header']");
 	private By inventoryItemPrice=By.cssSelector("div[class='inventory_item_price']");
-	
+	private By itemTotal=By.cssSelector("div[class='summary_subtotal_label']");
 	
 	
 	
@@ -34,6 +36,29 @@ public class CartPage extends Pagebase {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public String itemTotalPrice() {
+		
+	 return	getMessage(itemTotal);
+		
+	}
+	
+	public double sumOfProductprices() {
+		
+		List<WebElement> lisOfPrices = driver.findElements(inventoryItemPrice);
+		
+		double sum=0.0;
+		
+		for (int i = 0; i < lisOfPrices.size(); i++) {
+			sum=sum+ Double.valueOf(lisOfPrices.get(i).getText());
+			
+		}
+		
+		return sum;
+		
+	}
+	
 	
 	public String getProductPriceCheckout() {
 		
