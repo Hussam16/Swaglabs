@@ -19,7 +19,9 @@ public class ProductsPage extends Pagebase {
 	private By burgerMenu = By.cssSelector("div[class='bm-burger-button']");
 	private By menuList = By.cssSelector("a[class='bm-item menu-item']");
 	private By cartIcon = By.cssSelector("span[class='fa-layers-counter shopping_cart_badge']");
+	private By emptyCartIcon=By.cssSelector("svg[data-icon='shopping-cart']");
 	private By productPrice=By.cssSelector("div[class='inventory_item_price']");
+	private By closeButton= By.xpath("//button[contains(text(),'Close Menu')]");
 
 	public ProductsPage(WebDriver driver) {
 		super(driver);
@@ -119,10 +121,24 @@ public class ProductsPage extends Pagebase {
 		// TODO Auto-generated method stub
 		return getMessage(cartIcon);
 	}
+	
+	public String returnEmptyCartCount() {
+		return getMessage(emptyCartIcon);
+	}
 
 	public void clickCart() {
 		clickButton(cartIcon);
 
+	}
+
+
+
+
+
+	public void clickCloseButton() {
+		// TODO Auto-generated method stub
+		clickButton(closeButton);
+		
 	}
 
 }

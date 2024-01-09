@@ -141,6 +141,21 @@ public class ProductsTestcases extends BaseTest {
 		
 	}
 	
+	@Test(description = "Verify that the ")
+	public void VerifyRestAppFunctionility() {
+		
+		loginPages = new LoginPages(driver);
+		productsPage = new ProductsPage(driver);
+		
+		loginPages.navigateSwagLabs();
+		loginPages.signInUsernamePassword("standard_user", "secret_sauce");
+		productsPage.addProductToCart(0);
+		productsPage.addProductToCart(1);
+		productsPage.clickBurgerMenu("Reset App State");
+		productsPage.clickCloseButton();
+		Assert.assertTrue(productsPage.returnEmptyCartCount().isEmpty());
+		
+	}
 	
 	
 	

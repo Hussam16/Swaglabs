@@ -1,0 +1,1417 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automated Tests - Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 7, 2024 06:11:55 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">HussanAbdElFattah</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">TestPackage.LoginTestcases</a><a class="dropdown-item" href="#">TestPackage.ProductsTestcases</a><a class="dropdown-item" href="#">TestPackage.cartTestcases</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">checkOutTheorder( Verify checkout process)</p>
+            <p class="text-sm">
+              <span>6:11:56 PM</span> / <span>00:00:29:804</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkOutTheorder( Verify checkout process)</h5>
+<span class='badge badge-success'>01.07.2024 6:11:56 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:26 PM</span>
+<span class='badge badge-default'>00:00:29:804</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:26 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">addProductTocart( Add Product To Cart)</p>
+            <p class="text-sm">
+              <span>6:11:56 PM</span> / <span>00:00:32:858</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">addProductTocart( Add Product To Cart)</h5>
+<span class='badge badge-success'>01.07.2024 6:11:56 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:29 PM</span>
+<span class='badge badge-default'>00:00:32:858</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:29 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="HussanAbdElFattah"
+          tag="TestPackage.LoginTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">lockedLogin( locked Login)</p>
+            <p class="text-sm">
+              <span>6:11:56 PM</span> / <span>00:00:02:269</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">lockedLogin( locked Login)</h5>
+<span class='badge badge-success'>01.07.2024 6:11:56 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:11:58 PM</span>
+<span class='badge badge-default'>00:00:02:269</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.LoginTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.LoginTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:11:58 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="HussanAbdElFattah"
+          tag="TestPackage.LoginTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">sucessfulLogin( sucessful Login)</p>
+            <p class="text-sm">
+              <span>6:11:59 PM</span> / <span>00:00:33:104</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sucessfulLogin( sucessful Login)</h5>
+<span class='badge badge-success'>01.07.2024 6:11:59 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:32 PM</span>
+<span class='badge badge-default'>00:00:33:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.LoginTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.LoginTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:32 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">fillCheckoutDetials( Verify user 's able to fill courier detials)</p>
+            <p class="text-sm">
+              <span>6:12:26 PM</span> / <span>00:00:05:084</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">fillCheckoutDetials( Verify user 's able to fill courier detials)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:26 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:31 PM</span>
+<span class='badge badge-default'>00:00:05:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:31 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyMenuContents( verify Menu Contents)</p>
+            <p class="text-sm">
+              <span>6:12:29 PM</span> / <span>00:00:00:670</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyMenuContents( verify Menu Contents)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:29 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:30 PM</span>
+<span class='badge badge-default'>00:00:00:670</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:30 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyProductRemovalFromCart( verify Product Removal From Cart)</p>
+            <p class="text-sm">
+              <span>6:12:30 PM</span> / <span>00:00:01:961</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyProductRemovalFromCart( verify Product Removal From Cart)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:30 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:32 PM</span>
+<span class='badge badge-default'>00:00:01:961</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:32 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">removeIteamFromcart( remove Item From the cart)</p>
+            <p class="text-sm">
+              <span>6:12:31 PM</span> / <span>00:00:06:575</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">removeIteamFromcart( remove Item From the cart)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:31 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:37 PM</span>
+<span class='badge badge-default'>00:00:06:575</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:37 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifySortFromZtoA( verify Sort From ZtoA)</p>
+            <p class="text-sm">
+              <span>6:12:32 PM</span> / <span>00:00:01:456</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifySortFromZtoA( verify Sort From ZtoA)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:32 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:33 PM</span>
+<span class='badge badge-default'>00:00:01:456</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:33 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="HussanAbdElFattah"
+          tag="TestPackage.LoginTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyErrorLoginMessage( verify Error Login Message)</p>
+            <p class="text-sm">
+              <span>6:12:32 PM</span> / <span>00:00:03:153</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyErrorLoginMessage( verify Error Login Message)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:32 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:35 PM</span>
+<span class='badge badge-default'>00:00:03:153</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.LoginTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.LoginTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:35 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifySortOfProducts( verify SortOf Products From High to Low()</p>
+            <p class="text-sm">
+              <span>6:12:33 PM</span> / <span>00:00:01:084</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifySortOfProducts( verify SortOf Products From High to Low()</h5>
+<span class='badge badge-success'>01.07.2024 6:12:33 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:34 PM</span>
+<span class='badge badge-default'>00:00:01:084</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:34 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="HussanAbdElFattah"
+          tag="TestPackage.ProductsTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTheCartCount( verify The Cart Count)</p>
+            <p class="text-sm">
+              <span>6:12:34 PM</span> / <span>00:00:00:916</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyTheCartCount( verify The Cart Count)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:34 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:35 PM</span>
+<span class='badge badge-default'>00:00:00:916</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.ProductsTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.ProductsTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:35 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyCartPageOpened( verify Cart Page 'sOpened)</p>
+            <p class="text-sm">
+              <span>6:12:37 PM</span> / <span>00:00:01:067</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyCartPageOpened( verify Cart Page 'sOpened)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:37 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:38 PM</span>
+<span class='badge badge-default'>00:00:01:067</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:38 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyContinueShoppingButton( Verify Continue Shopping Button)</p>
+            <p class="text-sm">
+              <span>6:12:38 PM</span> / <span>00:00:01:031</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyContinueShoppingButton( Verify Continue Shopping Button)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:38 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:39 PM</span>
+<span class='badge badge-default'>00:00:01:031</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:12:39 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="15"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</p>
+            <p class="text-sm">
+              <span>6:12:39 PM</span> / <span>00:00:00:583</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:39 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:40 PM</span>
+<span class='badge badge-default'>00:00:00:583</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:12:40 PM</td>
+        <td>
+          Test Skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</p>
+            <p class="text-sm">
+              <span>6:12:40 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:40 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:40 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="17"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</p>
+            <p class="text-sm">
+              <span>6:12:40 PM</span> / <span>00:00:05:586</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:40 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:46 PM</span>
+<span class='badge badge-default'>00:00:05:586</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:12:46 PM</td>
+        <td>
+          Test Skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author="HussanAbdElFattah"
+          tag="TestPackage.cartTestcases"
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</p>
+            <p class="text-sm">
+              <span>6:12:46 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</h5>
+<span class='badge badge-success'>01.07.2024 6:12:46 PM</span>
+<span class='badge badge-danger'>01.07.2024 6:12:46 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HussanAbdElFattah</span>
+<span class="badge badge-pill badge-default">TestPackage.cartTestcases</span></div>
+<div class="m-t-10 m-l-5">TestPackage.cartTestcases</div>
+</div>
+</div>          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">TestPackage.LoginTestcases</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>TestPackage.LoginTestcases</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>lockedLogin( locked Login)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>sucessfulLogin( sucessful Login)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>verifyErrorLoginMessage( verify Error Login Message)</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">TestPackage.ProductsTestcases</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>TestPackage.ProductsTestcases</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>addProductTocart( Add Product To Cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>verifyMenuContents( verify Menu Contents)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>verifyProductRemovalFromCart( verify Product Removal From Cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>verifySortFromZtoA( verify Sort From ZtoA)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>verifySortOfProducts( verify SortOf Products From High to Low()</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>verifyTheCartCount( verify The Cart Count)</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-skip'>2</span>
+</span>
+<p class="name">TestPackage.cartTestcases</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>TestPackage.cartTestcases</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>checkOutTheorder( Verify checkout process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>fillCheckoutDetials( Verify user 's able to fill courier detials)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>removeIteamFromcart( remove Item From the cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>verifyCartPageOpened( verify Cart Page 'sOpened)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>verifyContinueShoppingButton( Verify Continue Shopping Button)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>18:12:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>18:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+<span class='badge log badge-skip'>2</span>
+</span>
+<p class="name">HussanAbdElFattah</p>
+<p class="duration text-sm">18 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>HussanAbdElFattah</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>checkOutTheorder( Verify checkout process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>addProductTocart( Add Product To Cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>lockedLogin( locked Login)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:11:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>sucessfulLogin( sucessful Login)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>fillCheckoutDetials( Verify user 's able to fill courier detials)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>verifyMenuContents( verify Menu Contents)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>verifyProductRemovalFromCart( verify Product Removal From Cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>removeIteamFromcart( remove Item From the cart)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>verifySortFromZtoA( verify Sort From ZtoA)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>verifyErrorLoginMessage( verify Error Login Message)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>verifySortOfProducts( verify SortOf Products From High to Low()</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>verifyTheCartCount( verify The Cart Count)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>verifyCartPageOpened( verify Cart Page 'sOpened)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>verifyContinueShoppingButton( Verify Continue Shopping Button)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>18:12:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>18:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:12:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>verifyTotalPrice( Verify the prices of all the products 's equal to the total price)</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 7, 2024 06:11:55 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 7, 2024 06:12:52 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>16</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='88%'>
+<b>16</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='87%'><b>14</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>2</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"checkOutTheorder( Verify checkout process)":29.804,"addProductTocart( Add Product To Cart)":32.858,"lockedLogin( locked Login)":2.269,"sucessfulLogin( sucessful Login)":33.104,"fillCheckoutDetials( Verify user 's able to fill courier detials)":5.084,"verifyMenuContents( verify Menu Contents)":0.67,"verifyProductRemovalFromCart( verify Product Removal From Cart)":1.961,"removeIteamFromcart( remove Item From the cart)":6.575,"verifySortFromZtoA( verify Sort From ZtoA)":1.456,"verifyErrorLoginMessage( verify Error Login Message)":3.153,"verifySortOfProducts( verify SortOf Products From High to Low()":1.084,"verifyTheCartCount( verify The Cart Count)":0.916,"verifyCartPageOpened( verify Cart Page 'sOpened)":1.067,"verifyContinueShoppingButton( Verify Continue Shopping Button)":1.031,"verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)":0.583,"verifyProductPriceValidDuringCheckoutProcess( verify Product Price Valid During Checkout Process)":0,"verifyTotalPrice( Verify the prices of all the products 's equal to the total price)":5.586,"verifyTotalPrice( Verify the prices of all the products 's equal to the total price)":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>HussanAbdElFattah</td>
+<td>16</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>88.889%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>TestPackage.LoginTestcases</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>TestPackage.ProductsTestcases</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>TestPackage.cartTestcases</td>
+<td>7</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>77.778%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 16,
+failParent: 0,
+warningParent: 0,
+skipParent: 2,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 14,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 2,
+infoEvents: 0
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

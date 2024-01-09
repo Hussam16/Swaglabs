@@ -10,6 +10,7 @@
       <class name="TestPackage.cartTestcases">
         <methods>
           <include name="setup"/>
+          <include name="intinilze"/>
           <include name="tearDown"/>
           <include name="verifyProductPriceValidDuringCheckoutProcess"/>
         </methods>

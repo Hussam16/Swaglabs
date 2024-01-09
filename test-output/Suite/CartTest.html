@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CartTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 05 14:36:50 EET 2024</td>
+<td>Started on:</td><td>Tue Jan 09 19:30:54 EET 2024</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36592 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35702 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,28 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess()'><b>verifyProductPriceValidDuringCheckoutProcess</b><br>Test class: TestPackage.cartTestcases<br>Test method: verify Product Price Valid During Checkout Process</td>
-<td><div><pre>java.lang.AssertionError: expected [9.99] but found [29.99]
-	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:142)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at PageObjects.ProductsPage.getRandomProductPrice(ProductsPage.java:43)
+	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:151)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431959981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace431959981'><pre>java.lang.AssertionError: expected [9.99] but found [29.99]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:142)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2029025011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2029025011'><pre>java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at PageObjects.ProductsPage.getRandomProductPrice(ProductsPage.java:43)
+	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:151)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,7 +123,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,30 +133,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestPackage.cartTestcases.verifyContinueShoppingButton()'><b>verifyContinueShoppingButton</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify Continue Shopping Button</td>
+<td title='TestPackage.cartTestcases.checkOutTheorder()'><b>checkOutTheorder</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify checkout process</td>
 <td></td>
-<td>1</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>6</td>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
+<tr>
+<td title='TestPackage.cartTestcases.verifyTotalPrice()'><b>verifyTotalPrice</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify the prices of all the products 's equal to the total price</td>
+<td></td>
+<td>7</td>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 <tr>
 <td title='TestPackage.cartTestcases.fillCheckoutDetials()'><b>fillCheckoutDetials</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify user 's able to fill courier detials</td>
 <td></td>
 <td>4</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 <tr>
 <td title='TestPackage.cartTestcases.verifyCartPageOpened()'><b>verifyCartPageOpened</b><br>Test class: TestPackage.cartTestcases<br>Test method: verify Cart Page 'sOpened</td>
 <td></td>
 <td>1</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
-<tr>
-<td title='TestPackage.cartTestcases.checkOutTheorder()'><b>checkOutTheorder</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify checkout process</td>
-<td></td>
-<td>7</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 <tr>
 <td title='TestPackage.cartTestcases.removeIteamFromcart()'><b>removeIteamFromcart</b><br>Test class: TestPackage.cartTestcases<br>Test method: remove Item From the cart</td>
 <td></td>
 <td>6</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
+<tr>
+<td title='TestPackage.cartTestcases.verifyContinueShoppingButton()'><b>verifyContinueShoppingButton</b><br>Test class: TestPackage.cartTestcases<br>Test method: Verify Continue Shopping Button</td>
+<td></td>
+<td>1</td>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -161,22 +172,28 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess()'><b>verifyProductPriceValidDuringCheckoutProcess</b><br>Test class: TestPackage.cartTestcases<br>Test method: verify Product Price Valid During Checkout Process</td>
-<td><div><pre>java.lang.AssertionError: expected [9.99] but found [29.99]
-	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:142)
+<td><div><pre>java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at PageObjects.ProductsPage.getRandomProductPrice(ProductsPage.java:43)
+	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:151)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace243608930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace243608930'><pre>java.lang.AssertionError: expected [9.99] but found [29.99]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:142)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace498868874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace498868874'><pre>java.lang.IndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at PageObjects.ProductsPage.getRandomProductPrice(ProductsPage.java:43)
+	at TestPackage.cartTestcases.verifyProductPriceValidDuringCheckoutProcess(cartTestcases.java:151)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -202,7 +219,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>TestPackage.cartTestcases@31190526</td></tr>
+<td>TestPackage.cartTestcases@198b6731</td></tr>
 </table><p>
 </body>
 </html>
